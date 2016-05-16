@@ -1,0 +1,229 @@
+body {
+  padding-top: 50px;
+  font-family: sans-serif, halvatica;
+}
+
+.notificationContainer {
+    position: absolute;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4%;
+    right: 5%;
+    width: 300px;
+    top: 130%;
+}
+
+.dropdown {
+    display:inline-block;
+    padding:5px 10px;
+}
+/*Background color for read notifications*/
+.background-grey{
+  background-color: #E9EFF2;
+}
+
+/*Background color for unread notifications*/
+.background-white{
+  background-color: white;
+}
+
+.fa-bell-o, .fa-envelope-o { 
+	font-size:28px;
+	color:#aabac3;
+}
+
+.notificationCount, .badge {
+	font-size:14px;
+	line-height:14px;
+	border-radius:50%;
+	background:#26b9b9;
+	border:2px solid #fff;
+}
+.notificationCount {
+	position:absolute !important;
+	top:-21px;
+	right:-4px;
+}
+
+
+.navbar-header { width:100%;}
+
+.navbar-default { background:#fff; }
+
+#notificationIcon{
+	position:relative;
+	padding:0 2px;
+}
+#notificationIcon:hover, #notificationIcon:focus {
+	background:transparent;
+	text-decoration:none;
+	outline:none;
+}
+
+.notifications-list {
+	margin:0;
+	padding:0;
+	list-style:none;
+	max-height:300px;
+	overflow-y:auto;
+}
+.avatar { 
+	width:50px; 
+	height:50px; 
+	background:#aaa;
+	border-radius:50%;
+}
+
+
+.notification-container {
+	margin-right: 20px;
+    margin-top: 10px;
+}
+
+#notificationIcon ~.popover.fade.bottom.in .popover-title {
+	padding:15px;
+	color:#747f8b;
+	background:#fff;
+	font-weight:700;
+	text-align:center;
+}
+
+#notificationIcon ~.popover { padding:0;}
+
+#notificationIcon ~.popover.fade.bottom.in .popover-content {
+	padding:0;
+}
+
+
+@media(max-width:768px) {
+	.navbar-header { width:auto;}
+}
+/* notofication bar */
+
+/* CSS used here will be applied after bootstrap.css */
+
+.dropdown {
+    display:inline-block;
+    margin-left:20px;
+    padding:10px;
+  }
+
+
+.glyphicon-bell {
+   
+    font-size:1.5rem;
+  }
+
+.notifications {
+   min-width:420px; 
+  }
+  
+.notifications-wrapper {
+	overflow:auto;
+	max-height:250px;
+	width: 100%;
+    border-bottom-right-radius: 4%;
+    border-bottom-left-radius: 4%;
+}
+    
+ .menu-title {
+     color:#737E8A;
+     font-size:1.5rem;
+      display:inline-block;
+      }
+ 
+.glyphicon-circle-arrow-right {
+      margin-left:10px;     
+   }
+  
+   
+ .notification-heading, .notification-footer  {
+ 	padding:10px 10px;
+ 	text-align: center;
+  border-bottom: 1px solid #D4DEE4;
+       }
+      
+        
+.dropdown-menu.divider {
+  margin:5px 0;          
+  }
+
+.item-title {
+        font-size: 1.3rem;
+    color: #97A1AC;
+    margin-left: 65px;
+    padding: 5px 0px;
+    margin-top: 12px;
+}
+
+.item-title span{
+	margin: 0;
+	font-weight: bold;
+	font-size: small;
+}
+
+.notifications a.content {
+ text-decoration:none;
+ background:#ccc;
+
+ }
+    
+.notification-item {
+ padding:10px;
+ /*margin:5px;*/
+ /*background:#E9EFF2;*/
+ /*border-radius:4px;*/
+ height: 73px;
+ border-bottom: 1px solid #D4DEE4;
+ }
+
+
+ /*css for notification drawer pointer*/
+.arrow_box {
+  background: #ffffff;
+  border: 1px solid #D2D5DA;
+}
+.arrow_box:after, .arrow_box:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 15px;
+  margin-left: -15px;
+}
+.arrow_box:before {
+  border-color: rgba(210, 213, 218, 0);
+  border-bottom-color: #D2D5DA;
+  border-width: 16px;
+  margin-left: -16px;
+}
+/* Scroll Bar */
+::-webkit-scrollbar,-moz-scrollbar{
+   width: 12px;
+}
+
+/* Scroll Track */
+::-webkit-scrollbar-track,-moz-scrollbar-track{
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+/* Scroll Handle */
+::-webkit-scrollbar-thumb,-moz-scrollbar-thumb {
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background: rgba(65,63,67,0.4);
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive,-moz-scrollbar-thumb:window-inactive{
+background: rgba(65,63,67,0.4);
+}
