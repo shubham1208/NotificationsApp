@@ -36,17 +36,6 @@
               <i class="fa fa-bell-o" aria-hidden="true" ng-click="toggleNotificationDiv();markAsRead();"></i>
               <span class="badge notificationCount" ng-show = "unreadNotifications.length>0">{{unreadNotifications.length}}</span>
             </a>
-            <!-- <div ng-show="showDiv" class="alert_list">
-              <ul class="notifications-list">
-                <li data-alert_id="1" class="alert-item" ng-repeat="data in content">
-                  <div class="clearfix">
-                    <div class="pull-left avatar"></div>
-                    <span href="#" class="alert_message" style="padding-left:45px;">{{data.notification.message}}</span>
-                   </div>
-                </li>
-                
-              </ul>
-            </div> -->
             <div ng-show="showDiv" class="notificationContainer arrow_box" id="notificationContainer">
               <div class="notification-heading">
                 <h4 class="menu-title">Notifications</h4>
@@ -79,28 +68,7 @@
 
     <div class="container">
     </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    </script>
-    <script type="text/javascript">
-      /*$("#news").popover({
-        'title' : 'Notifications' + '<span class="badge" style="margin-left:5px;">3</span>', 
-        'html' : true,
-        'placement' : 'bottom',
-        'content' : $(".alert_list").html()
-      });*/
-
-      // $('.turn_off_alert').live('click', function(event){
-      //   var alert = $(this).parent();
-      //   var alert_id = alert.data("alert_id");
-      //   alert.hide("fast");
-      // });
-    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>\
   </body>
 </html>

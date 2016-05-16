@@ -11,7 +11,6 @@ db.open(function(err, db) {
         console.log("Connected to 'test' database");
         db.collection('notification', {strict:true}, function(err, collection) {
             if (err) {
-                console.log("The 'test' collection doesn't exist. Creating it with sample data...");
             }
         });
     }
@@ -56,16 +55,14 @@ var addNewNotification = function(){
             "message":"Published a post",
             "notified":0
         }];
-    console.log(notifications);
     var selectedNotification = notifications[Math.floor(Math.random() * 4) + 0 ];
-    console.log(selectedNotification);
     selectedNotification.timestamp = new Date();
     db.collection('notification', function(err, collection) {
         collection.insert(selectedNotification, {safe:true}, function(err, result) {
             if (err)
                 console.log("Error: "+err);
             else
-                console.log('Success: ' + JSON.stringify(result[0]));
+                console.log('Success');
         });
     });
     setTimeout(function(){addNewNotification();},30000);

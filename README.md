@@ -6,7 +6,10 @@ This is a notifications app made using MEAN stack which can be included in any p
 
 1. Download and install MongoDB Community Server(v3.2.6): https://www.mongodb.com/download-center#community
 2. Download and install Node.js(v4.4.4): https://nodejs.org/en/download/
-
+3. Install following packages using **npm install**:
+   1. express
+   2. mongodb
+   3. bson
 
 #Setup
 

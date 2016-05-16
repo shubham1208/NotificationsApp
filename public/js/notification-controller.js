@@ -7,7 +7,6 @@ var getNotifications = function($timeout,$http,$scope){
 		success(function(data){
 			$scope.content = data;
 			$scope.unreadNotifications = getUnreadNotifications(data);
-			console.log($scope.unreadNotifications);
 			$timeout(function(){getNotifications($timeout,$http,$scope);},10000);
 		});
 }

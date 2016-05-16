@@ -14,12 +14,7 @@ app.use(function(req, res, next) {
   next();
 });
 app.get('/notifications', notification.findAll);
-/*app.put('/notifications/zero', notification.updateToZero);*/
-/*app.get('/notifications/new', notification.findNew);*/
-/*app.get('/notifications/:id', notification.findById);*/
-/*app.post('/notifications', notification.addNotification);*/
 app.put('/notifications', notification.updateNotification);
-/*app.delete('/wines/:id', wine.deleteWine);*/
 
 app.listen(3000);
 console.log('Listening on port 3000...');
