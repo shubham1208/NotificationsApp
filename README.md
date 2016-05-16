@@ -1,3 +1,4 @@
+
 # NotificationsApp
 This is a notifications app made using MEAN stack which can be included in any project to get facebook like real time notifications.
 
@@ -43,5 +44,6 @@ Sample Notification Object:
 
 ![alt tag](http://s32.postimg.org/bzyzzxxat/screencapture_2.png)
         
+
 
 
